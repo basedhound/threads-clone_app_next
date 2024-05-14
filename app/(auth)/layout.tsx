@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Threads",
   description: "A Next.js 13 Meta Threads Application",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -18,9 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider
-      /* appearance={{
+    /* appearance={{
         baseTheme: dark,
-      }} */>
+      }} */
+    >
       <html lang="en">
         <body className={`${inter.className} bg-dark-1`}>{children}</body>
       </html>
