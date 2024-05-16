@@ -29,8 +29,8 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <Topbar/>
-          <main>
+          <Topbar />
+          <main className="flex">
             <LeftSidebar />
             <section className="main-container">
               <div className="w-full max-w-4xl">{children}</div>
