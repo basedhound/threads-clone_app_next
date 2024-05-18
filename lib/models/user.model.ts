@@ -35,5 +35,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.models.User || mongoose.model("User", userSchema);
+// At first the mongoose.models.User will be undefined, so we need to check if it exists before creating a new model.
 
 export default User;
