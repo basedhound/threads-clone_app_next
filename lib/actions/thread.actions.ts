@@ -1,13 +1,13 @@
 "use server";
-
+//
 import { revalidatePath } from "next/cache";
-
 import { connectToDB } from "../mongoose";
-
+//
 import User from "../models/user.model";
 import Thread from "../models/thread.model";
 import Community from "../models/community.model";
 
+// Fetch all posts (threads) with pagination
 export async function fetchPosts(pageNumber = 1, pageSize = 20) {
   connectToDB();
 
@@ -48,6 +48,7 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
   return { posts, isNext };
 }
 
+// Thread creation TypeScript parameters
 interface Params {
   text: string;
   author: string;
@@ -55,6 +56,7 @@ interface Params {
   path: string;
 }
 
+// Create a new thread
 export async function createThread({
   text,
   author,

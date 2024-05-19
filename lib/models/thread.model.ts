@@ -24,7 +24,7 @@ const threadSchema = new mongoose.Schema({
   children: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Thread",
+      ref: "Thread", // 1 thread can have multiple child threads (muli-level comments)
     },
   ],
 });
