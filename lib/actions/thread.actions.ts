@@ -7,7 +7,7 @@ import User from "../models/user.model";
 import Thread from "../models/thread.model";
 import Community from "../models/community.model";
 
-// Fetch all posts (threads) with pagination
+//? Fetch all posts (threads) with pagination
 export async function fetchPosts(pageNumber = 1, pageSize = 20) {
   connectToDB();
 
@@ -48,7 +48,7 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
   return { posts, isNext };
 }
 
-// Thread creation TypeScript parameters
+//? Thread creation TypeScript parameters
 interface Params {
   text: string;
   author: string;
@@ -56,7 +56,7 @@ interface Params {
   path: string;
 }
 
-// Create a new thread
+//? Create a new thread
 export async function createThread({
   text,
   author,
@@ -95,6 +95,7 @@ export async function createThread({
   }
 }
 
+//? Fetch all child threads recursively
 async function fetchAllChildThreads(threadId: string): Promise<any[]> {
   const childThreads = await Thread.find({ parentId: threadId });
 
@@ -107,6 +108,7 @@ async function fetchAllChildThreads(threadId: string): Promise<any[]> {
   return descendantThreads;
 }
 
+//? Delete a thread and all its descendants
 export async function deleteThread(id: string, path: string): Promise<void> {
   try {
     connectToDB();
@@ -163,6 +165,7 @@ export async function deleteThread(id: string, path: string): Promise<void> {
   }
 }
 
+//? Fetch a thread by its ID
 export async function fetchThreadById(threadId: string) {
   connectToDB();
 
@@ -198,7 +201,6 @@ export async function fetchThreadById(threadId: string) {
         ],
       })
       .exec();
-
     return thread;
   } catch (err) {
     console.error("Error while fetching thread:", err);
@@ -206,6 +208,7 @@ export async function fetchThreadById(threadId: string) {
   }
 }
 
+//? Add a comment to a thread
 export async function addCommentToThread(
   threadId: string,
   commentText: string,
