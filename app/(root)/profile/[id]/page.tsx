@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { profileTabs } from "@/constants";
 import { fetchUser } from "@/lib/actions/user.actions";
 
-// 
+//
 async function Page({ params }: { params: { id: string } }) {
   const user = await currentUser();
   if (!user) return null;
@@ -28,6 +28,7 @@ async function Page({ params }: { params: { id: string } }) {
         bio={userInfo.bio}
       />
 
+      {/* TABS : Threads | Replies | Tagged */}
       <div className="mt-9">
         <Tabs defaultValue="threads" className="w-full">
           <TabsList className="tab">

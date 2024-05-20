@@ -6,7 +6,7 @@ import Thread from "../models/thread.model";
 import User from "../models/user.model";
 import { connectToDB } from "../mongoose";
 
-// Fetch a user by their userId and populate the communities they are part of
+//? Fetch a user by their userId and populate the communities they are part of
 export async function fetchUser(userId: string) {
   try {
     connectToDB();
@@ -20,6 +20,7 @@ export async function fetchUser(userId: string) {
   }
 }
 
+//? Typescript interface for the parameters
 interface Params {
   userId: string;
   username: string;
@@ -29,8 +30,8 @@ interface Params {
   path: string;
 }
 
-// Create or update a user with the provided details
-// Destructure the parameters from the object
+//? Create or update a user with the provided details
+// + Destructure the parameters from the object
 export async function updateUser({
   userId,
   bio,
@@ -62,7 +63,7 @@ export async function updateUser({
   }
 }
 
-// Fetch all threads authored by the user with the given userId
+//? Fetch all threads authored by the user with the given userId
 export async function fetchUserPosts(userId: string) {
   try {
     connectToDB();
@@ -95,7 +96,7 @@ export async function fetchUserPosts(userId: string) {
   }
 }
 
-// Almost similar to Thead (search + pagination) and Community (search + pagination)
+//? Almost similar to Thead (search + pagination) and Community (search + pagination)
 export async function fetchUsers({
   userId,
   searchString = "",
@@ -154,7 +155,7 @@ export async function fetchUsers({
   }
 }
 
-// Fetch all the replies to the threads authored by the user with the given userId
+//? Fetch all the replies to the threads authored by the user with the given userId
 export async function getActivity(userId: string) {
   try {
     connectToDB();
