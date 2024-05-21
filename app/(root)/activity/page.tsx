@@ -1,17 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-
+import { currentUser } from "@clerk/nextjs/server";
+//
 import { fetchUser, getActivity } from "@/lib/actions/user.actions";
 
+// Page
 async function Page() {
   const user = await currentUser();
   if (!user) return null;
 
+  // Fetch user info
   const userInfo = await fetchUser(user.id);
   if (!userInfo?.onboarded) redirect("/onboarding");
 
+  // Fetch activity
   const activity = await getActivity(userInfo._id);
 
   return (
