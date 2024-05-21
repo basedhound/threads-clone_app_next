@@ -116,6 +116,7 @@ function ThreadCard({
           </div>
         </div>
 
+        {/* DeleteThread component */}
         <DeleteThread
           threadId={JSON.stringify(id)}
           currentUserId={currentUserId}
@@ -125,6 +126,7 @@ function ThreadCard({
         />
       </div>
 
+      {/* If the thread is not a comment and has comments, display the comments */}
       {!isComment && comments.length > 0 && (
         <div className="ml-1 mt-3 flex items-center gap-2">
           {comments.slice(0, 2).map((comment, index) => (
@@ -146,6 +148,7 @@ function ThreadCard({
         </div>
       )}
 
+      {/* Display Community, formatted date  */} 
       {!isComment && community && (
         <Link
           href={`/communities/${community.id}`}
