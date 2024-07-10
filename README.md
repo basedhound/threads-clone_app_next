@@ -49,7 +49,7 @@
 
 👉 **Visually Appealing Home Page**: A visually appealing home page showcasing the latest threads for an engaging user experience.
 
-👉 **Create Thread Page**: A dedicated page for users to create threads, fostering community engagement
+👉 **Create Thread Page**: A dedicated page for users to create threads, fostering community engagement.
 
 👉 **Commenting Feature**: A commenting feature to facilitate discussions within threads.
 
@@ -90,6 +90,7 @@
 👉 **Data Validation with Zod**: Data integrity with data validation using Zod
 
 👉 **Form Management with React Hook Form**: Efficient management of forms with React Hook Form for a streamlined user input experience.
+
 
 ## <br /> <a name="quick-start">🚀 Quick Start</a>
 
