@@ -20,12 +20,6 @@
 
 ##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
-
-Webhooks
-Serverless APIs
-React Hook Form
-Zod
-
 - **React** is a popular JavaScript library for building user interfaces, particularly single-page applications where data changes over time. React's component-based architecture allows developers to create reusable UI components, making development more efficient and the codebase easier to maintain. Its virtual DOM enhances performance by minimizing direct interactions with the browser's DOM.
 
 - **Next.js** is a React framework known for its server-side rendering (SSR) and static site generation (SSG) capabilities, enhancing performance and SEO for web applications. It offers features like automatic code splitting, API routes for server-side logic, and a plugin system for extensibility.
