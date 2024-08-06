@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://threads-fv.vercel.app" target="_blank">
-      <img src="public/design/preview.webp" alt="Project Banner">
+      <img src="public/design/preview.png" alt="Project Banner">
     </a>
   <h3 align="center">Threads Clone</h3>
 </div>
@@ -20,27 +20,29 @@
 
 ##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **React** is a popular JavaScript library for building user interfaces, particularly single-page applications where data changes over time. React's component-based architecture allows developers to create reusable UI components, making development more efficient and the codebase easier to maintain. Its virtual DOM enhances performance by minimizing direct interactions with the browser's DOM.
+- [**React**](https://react.dev/reference/react) is a popular JavaScript library for building user interfaces, particularly single-page applications where data changes over time. React's component-based architecture allows developers to create reusable UI components, making development more efficient and the codebase easier to maintain. Its virtual DOM enhances performance by minimizing direct interactions with the browser's DOM.
 
-- **Next.js** is a React framework known for its server-side rendering (SSR) and static site generation (SSG) capabilities, enhancing performance and SEO for web applications. It offers features like automatic code splitting, API routes for server-side logic, and a plugin system for extensibility.
+- [**Next.js**](https://nextjs.org/docs) is a React framework known for its server-side rendering (SSR) and static site generation (SSG) capabilities, enhancing performance and SEO for web applications. It offers features like automatic code splitting, API routes for server-side logic, and a plugin system for extensibility.
 
-- **TypeScript** is a statically typed superset of JavaScript that allows for early detection of errors and more robust, maintainable code. TypeScript's type system helps developers catch mistakes early during the development process, ensuring a more stable and reliable application.
+- [**TypeScript**](https://www.typescriptlang.org/docs/) is a statically typed superset of JavaScript that allows for early detection of errors and more robust, maintainable code. TypeScript's type system helps developers catch mistakes early during the development process, ensuring a more stable and reliable application.
 
-- **Clerk** is an advanced authentication and user management service that provides secure and seamless user login, registration, and profile management. Clerk handles complex authentication flows, including multi-factor authentication (MFA), social logins, and passwordless authentication, making it easy to manage user identities while maintaining high security standards.
+- [**Clerk**](https://clerk.com/docs) is an advanced authentication and user management service that provides secure and seamless user login, registration, and profile management. Clerk handles complex authentication flows, including multi-factor authentication (MFA), social logins, and passwordless authentication, making it easy to manage user identities while maintaining high security standards.
 
-- **MongoDB** is a NoSQL database system known for its flexibility and scalability, ideal for handling large volumes of unstructured or semi-structured data. It stores data in JSON-like documents, making it easy to integrate with modern applications. MongoDB's features include powerful querying capabilities, automatic sharding for horizontal scaling, flexible data models, and support for distributed transactions in recent versions.
+- [**MongoDB**](https://www.mongodb.com/docs/atlas/getting-started/) is a NoSQL database system known for its flexibility and scalability, ideal for handling large volumes of unstructured or semi-structured data. It stores data in JSON-like documents, making it easy to integrate with modern applications. MongoDB's features include powerful querying capabilities, automatic sharding for horizontal scaling, flexible data models, and support for distributed transactions in recent versions.
 
-- **Webhooks** are automated messages sent from one application to another when specific events occur. They are typically triggered by events in a source application and deliver data in real-time to a target application via HTTP POST requests. Webhooks facilitate seamless integration between different systems, allowing for event-driven communication without continuous polling.
+- [**Mongoose**](https://mongoosejs.com/docs/) is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a schema-based solution to model application data, ensuring data consistency and providing powerful tools for querying and validation. Mongoose simplifies the process of interacting with MongoDB by providing a higher abstraction layer.
 
-- **Serverless** APIs refer to backend services that run on cloud infrastructure, where the cloud provider dynamically manages the allocation and scaling of resources. Serverless APIs eliminate the need for developers to manage servers, enabling them to focus on writing code and delivering functionality. They are cost-effective, scalable, and ideal for handling unpredictable workloads or microservices architectures.
+- [**Webhooks**](https://docs.github.com/en/webhooks) are automated messages sent from one application to another when specific events occur. They are typically triggered by events in a source application and deliver data in real-time to a target application via HTTP POST requests. Webhooks facilitate seamless integration between different systems, allowing for event-driven communication without continuous polling.
 
-- **React Hook Form** is a lightweight library for managing forms in React applications. It simplifies form handling by leveraging React's Hooks API, offering a performant and intuitive way to manage form state, validation, and submission. React Hook Form emphasizes reusability, flexibility, and minimal boilerplate code, making it suitable for building complex forms efficiently.
+- [**Serverless**](https://aws.amazon.com/what-is/serverless-computing/) refers to backend services that run on cloud infrastructure, where the cloud provider dynamically manages the allocation and scaling of resources. Serverless APIs eliminate the need for developers to manage servers, enabling them to focus on writing code and delivering functionality. They are cost-effective, scalable, and ideal for handling unpredictable workloads or microservices architectures.
 
-- **Zod** is a TypeScript-first schema validation library that provides a robust and type-safe way to define data schemas and validate data against those schemas. It allows developers to declare data shapes using TypeScript's type system, ensuring type safety at compile-time. Zod supports advanced features like schema composition, custom error messages, and runtime validation, making it suitable for both frontend and backend validation needs.
+- [**React Hook Form**](https://react-hook-form.com/get-started) is a lightweight library for managing forms in React applications. It simplifies form handling by leveraging React's Hooks API, offering a performant and intuitive way to manage form state, validation, and submission. React Hook Form emphasizes reusability, flexibility, and minimal boilerplate code, making it suitable for building complex forms efficiently.
 
-- **Tailwind** is a utility-first CSS framework that speeds up UI development by providing a set of pre-built utility classes. It allows developers to quickly build custom designs without writing traditional CSS, promoting rapid prototyping and design consistency.
+- [**Zod**](https://zod.dev/) is a TypeScript-first schema validation library that provides a robust and type-safe way to define data schemas and validate data against those schemas. It allows developers to declare data shapes using TypeScript's type system, ensuring type safety at compile-time. Zod supports advanced features like schema composition, custom error messages, and runtime validation, making it suitable for both frontend and backend validation needs.
 
-- **shadcn/ui** is as comprehensive React component library designed for creating modern and responsive user interfaces. ShadCN offers a wide range of pre-built, customizable components that adhere to best practices for accessibility and performance. Its intuitive API and well-documented components enable developers to build consistent and aesthetically pleasing UIs with ease.
+- [**Tailwind**](https://v2.tailwindcss.com/docs) is a utility-first CSS framework that speeds up UI development by providing a set of pre-built utility classes. It allows developers to quickly build custom designs without writing traditional CSS, promoting rapid prototyping and design consistency.
+
+- [**shadcn/ui**](https://ui.shadcn.com/docs) is as comprehensive React component library designed for creating modern and responsive user interfaces. ShadCN offers a wide range of pre-built, customizable components that adhere to best practices for accessibility and performance. Its intuitive API and well-documented components enable developers to build consistent and aesthetically pleasing UIs with ease.
 
 
 ## <br/> <a name="features">📝 Features</a>
